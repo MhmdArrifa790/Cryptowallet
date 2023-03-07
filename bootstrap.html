@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      body {
+        background: linear-gradient(82.94deg, #F0F2FB 50.57%, #FEFEFF 77.18%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Assets/logo.png" alt="logo" width="40px">
+          <img src="./Assets/logo-text.png" alt="logo-text" width="163px">
+        </a>
+        <div class="vr mx-2 d-none d-lg-inline" style="width: 2px;"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Exchange</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#">Market</a>
+            </li>
+          </ul>
+          <div class="d-grid d-md-flex gap-2">
+            <button class="btn btn-outline-primary rounded-pill px-4" type="button">Masuk</button>
+            <button class="btn btn-primary rounded-pill px-4" type="button" data-bs-toggle="modal" data-bs-target="#modalRegister">Daftar</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid border-top border-2"></div>
+  <!-- HEADER END -->
+
+  <!-- HERO -->
+  <div class="container my-3">
+    <div class="row align-items-center">
+      <div class="col text-center text-md-start">
+        <h1 class="fw-bold">
+          Jual beli Crypto dalam hitungan menit
+        </h1>
+        <p class="text-secondary">
+          Perdagangkan Bitcoin, Ethereum, USDT, dan altcoin teratas di bursa aset kripto legendaris.
+        </p>
+        <button class="btn btn-primary rounded-pill px-4">Lihat Market Trend</button>
+      </div>
+      <div class="col d-none d-md-inline">
+        <img src="./Assets/hero.png" alt="" class="img-fluid ">
+      </div>
+    </div>
+  </div>
+  <!-- HERO END -->
+
+  <!-- INFO -->
+  <div class="container my-3">
+    <div class="card p-4 border-0 shadow-sm">
+      <div class="row">
+        <div class="col md-3">
+          <img src="./Assets/icon1.png" alt="">
+          <div class="text-secondary">Bitcoin/BTC</div>
+          <h4 class="fw-bold">$61,953.97</h4>
+          <div class="text-success">+0,67%</div>
+        </div>
+        <div class="col md-3">
+          <img src="./Assets/icon2.png" alt="">
+          <div class="text-secondary">Etherium/ETH</div>
+          <h4 class="fw-bold">$61,953.97</h4>
+          <div class="text-success">+0,67%</div>
+        </div>
+        <div class="col md-3">
+          <img src="./Assets/icon3.png" alt="">
+          <div class="text-secondary">Binance Coin/BNB</div>
+          <h4 class="fw-bold">$61,953.97</h4>
+          <div class="text-success">+0,67%</div>
+        </div>
+        <div class="col md-3">
+          <img src="./Assets/icon4.png" alt="">
+          <div class="text-secondary">Tether/USDT</div>
+          <h4 class="fw-bold">$61,953.97</h4>
+          <div class="text-success">+0,67%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- INFO-END -->
+  
+  <!-- MODAL  -->
+  <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="border border-2 rounded-circle float-end">
+            <button
+           type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width:40px; height:40px;">
+          </button>
+          </div>
+          <h4 class="fw-bold">Daftar ke Cryptowallet</h4>
+          <div class="text-secondary">
+          <a href="" class="text-decoration-none">  Sudah punya akun? </a>
+          </div>
+          <form class="my-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Password">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fw-bold">Konfirmasi Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Konfirmasi Password">
+            </div>
+           <div class="d-grid">
+            <button type="submit" class="btn btn-primary rounded-pill px-4">Daftar</button>
+           </div>
+          </form>
+          <div class="text-secondary text-center">
+            Dengan klik mendaftar, saya menyetujui <a href="#" class="text-decoration-none">Syarat dan Ketentuan </a> serta <a href="#" class="text-decoration-none"> Kebijakan Privasi</a> Cryptowallet
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL END -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

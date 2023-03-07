@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Assets/icon.svg">
+</head>
+<body>
+   <!-- Header -->
+    <div class="header">
+        <div class="header-menu">
+            <img src="./Assets/logo.png" alt="logo image" class="logo">
+            <img src="./Assets/logo-text.png" alt="logo text" class="logo-text">
+            <ul>
+                <li class="nav-list"><a href="Exchange">Exchange</a></li>
+                <li class="nav-list"><a href="Market">Market</a></li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn btn-primary">Masuk</button>
+            <button class="btn btn-secondary" id="btnRegister">Daftar</button>
+        </div>
+    </div>
+   <!-- End Header -->
+
+   <!-- Hero -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Jual beli <br> crypto dalam hitungan menit</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quo rerum autem hic sed, qui voluptatibus temporibus eos perferendis et earum fuga aperiam quibusdam inventore officia illo, itaque esse provident.</p>
+            <button class="btn btn-secondary">Lihat Market Trend</button>
+        </div>
+        <div class="hero-image">
+            <img src="./Assets/hero.png" alt="hero image">
+        </div>
+    </div>
+   <!-- Hero end -->
+
+   <!-- Info -->
+    <div class="info">
+        <div class="info-card">
+            <div class="info-list">
+                <img src="./Assets/icon1.png" alt="icon 1">
+                <div class="text-header">Bitcoin/BTC</div>
+                <h4>$61,953.97</h4>
+                <div class="text-desc">+0,67%</div>
+            </div>
+            <div class="info-list">
+                <img src="./Assets/icon2.png" alt="icon 2">
+                <div class="text-header">Etherium/ETH</div>
+                <h4>$61,953.97</h4>
+                <div class="text-desc">-0,67%</div></div>
+            <div class="info-list">
+                <img src="./Assets/icon3.png" alt="icon 3">
+                <div class="text-header">Binance Coin/BNB</div>
+                <h4>$485.10</h4>
+                <div class="text-desc">+0,67%</div>
+            </div class="info-list">
+            <div class="info-list">
+                <img src="./Assets/icon4.png" alt="icon 4">
+                <div class="text-header">Tether/USDT</div>
+                <h4>$61,953.97</h4>
+                <div class="text-desc">+0,67%</div>
+            </div>
+        </div>
+    </div>
+   <!-- Info end -->
+
+   <!-- modal -->
+    <div class="modal" id="modalRegister">Ini Modal
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="icon-close">&times;</span>
+            </div>
+            <h4>Daftar ke Cryptowallet</h4>
+            <div class="modal-desc">
+                Sudah punya akun? <a href="#">Masuk disini</a>
+            </div>
+            <form>
+                <div class="form-input">
+                    <label>Email</label>
+                    <input type="text" placeholder="Masukkan Email">
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan Kata Sandi">
+                </div>
+                <div class="form-input">
+                    <label>Konfirmasi Kata Sandi</label>
+                    <input type="password" placeholder="Konfirmasi Kata Sandi">
+                </div>
+                <button class="btn btn-primary btn-block">Daftar</button>
+            </form>
+            <div class="modal-footer">
+                Dengan klik mendaftar, saya menyetujui <a href="#">Syarat & Ketentuan</a> serta
+                <a href="#">Kebijakan Privasi</a> Cryptowallet
+            </div>
+        </div>
+    </div>
+   <!-- modalend -->
+
+<script>
+    var btnRegister = document.getElementById ('btnRegister');
+    var modalregister = document.getElementById ('modalRegister');
+    var btnClosemodal = document.getElementsByClassName ('icon-close')[0];
+
+
+    btnRegister.onclick = function() {
+        // console.log('button register clicked !');
+        modalRegister.style.display = "flex";
+        };
+    btnClosemodal.onclick = function () {
+        modalregister.style.display = "none";
+        };
+    
+    window.onclick = function () {
+        console.log('window is clicked !');
+        if(event.target == modalregister) {
+            modalregister.style.display ='none';
+        };
+    };
+</script>
+
+</body>
+</html>
